@@ -1,10 +1,11 @@
 #!/bin/bash -e
-
+# mkdir [-p] dirName    -p 确保目录名存在，不存在则创建一个
 mkdir -p scratch
 mkdir -p downloads
 
 # Download
 # WebQuestionsSP data
+# wget 
 wget -nd https://download.microsoft.com/download/F/5/0/F5012144-A4FB-4084-897F-CFDA99C60BDF/WebQSP.zip
 unzip WebQSP.zip -d downloads/
 rm -f WebQSP.zip
